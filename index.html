@@ -39,10 +39,54 @@
 
 <body class="font-Lato">
     <header class="container mx-auto">
+        <nav class="bg-btn-primary rounded-full">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-center gap-4">
+                    <img src="images/logo.png" alt="logo">
+                    <a class="text-5xl font-extrabold ">Fruit Burst</a>
+                </div>
+                <div class="navbar-end">
+                    <div class="form-control hidden lg:flex">
+                        <div class="input-group">
+                            <div class="form-control">
+                                <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto rounded-full" />
+                            </div>
+                            <button class="relative right-7 ">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
 
-    </header>
-    <main class="container mx-auto">
-        <section class="mt-10 mb-36 relative">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="mt-10 mb-36 relative  ">
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
                     <div class="hero min-h-screen " style="background-image: url(images/banner1.png);">
@@ -109,7 +153,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hidden lg:flex absolute left-44 -bottom-20   ">
+            <div class="hidden lg:flex absolute left-40 -bottom-20   m-auto">
                 <div class="flex justify-center items-center text-center gap-16 p-5 bg-base-100 shadow-xl  rounded-xl ">
                     <div>
                         <img src="images/fruit1.png" alt="">
@@ -133,7 +177,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </header>
+    <main class="container mx-auto">
+
         <section>
             <div class="flex  flex-col lg:flex-row justify-between items-center space-y-9 ">
                 <div class="lg:text-left text-center space-y-4 mt-2">
